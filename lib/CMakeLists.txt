@@ -3,7 +3,7 @@ set( LIBSRC command_arguments.cpp command_option_base.cpp )
 include_directories( ${PROJECT_SOURCE_DIR}/include  
                      ${PROJECT_SOURCE_DIR}/include/cmdargs ) 
 
-add_library( cmdargs ${LIBSRC} )
+add_library( cmdargs SHARED ${LIBSRC} )
 
 # Enable warnings if using clang or gcc.
 if ( "${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang" 
