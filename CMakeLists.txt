@@ -2,6 +2,7 @@ cmake_minimum_required( VERSION 3.0 FATAL_ERROR )
 project( cmdargs )
 set( version 1.1 )
 set( CMAKE_INCLUDE_CURRENT_DIR ON )
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 ##
 # for submodules, this needs to be reset to avoid
